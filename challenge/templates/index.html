@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mission to Mars</title>
     <link
@@ -10,8 +11,8 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
   </head>
-  <body>
-    <div class="container">
+  <body style=background-color:rgb(242,200,124);>
+    <div class="container-fluid">
       <!-- Add Jumbotron to Header -->
       <div class="jumbotron text-center" style="background-image: url(&quot;https://courses.bootcampspot.com/courses/1378/files/1510014/preview&quot;);">
         <h1 style=color:red>Mission to Mars</h1>
@@ -33,7 +34,7 @@
 
       <!-- Section for Featured Image and Facts table -->
       <div class="row" id="mars-featured-image">
-        <div class="col-md-8">
+        <div class="col-md-6">
           <h2 style=color:rgb(181,73,73)>Featured Mars Image</h2>
 
           <!-- if images is False/None/non-existent, then default to error message -->
@@ -44,7 +45,7 @@
           />
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-5">
           <!-- Mars Facts -->
           <div class="row" id="mars-facts">
             <h3 style=color:rgb(181,73,73)>Mars Facts</h3>
@@ -73,7 +74,7 @@
       <!-- Section for Mars Hemispheres -->
       <div class="row" id="mars-hemispheres">
         <div class="page-header">
-          <h2 class="text-center" style=color:red>Mars Hemispheres</h2>
+          <h2 class="text-center" style=color:rgb(181,73,73)>Mars Hemispheres</h2>
         </div>
         {% for hemisphere in mars.hemispheres %}
         <div class="col-md-6">
